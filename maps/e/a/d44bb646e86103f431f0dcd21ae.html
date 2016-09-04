@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+	<title>David Lowe - Family Tree - Family Map</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps GrampsAIO64-4.2.1-2 http://gramps-project.org/" />
+	<meta name="author" content="David Lowe" />
+	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link media="screen" href="../../../css/narrative-screen.css" rel="stylesheet" type="text/css" />
+	<link media="print" href="../../../css/narrative-print.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" media="screen" rel="stylesheet" href="../../../css/narrative-maps.css" />
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script style="width =100%; height =100%;" deter="deter" type="text/javascript">
+
+  var markers = [];
+  var iterator = 0;
+
+  var tracelife = [
+    ['Bullarook, Victoria, Australia', -37.52766111, 143.99763056, 1],
+    ['Heidelberg, Victoria, Australia', -37.75681111, 145.06125000, 2],
+    ['Barrabool, Victoria, Australia', -38.16133611, 144.24902222, 3],
+    ['Mt Eliza, Victoria, Australia', -38.19365000, 145.09503056, 4],
+    ['Melbourne, Victoria, Australia', -37.81400000, 144.96331944, 5],
+    ['Fiery Creek, Victoria, Australia', -37.72486111, 142.96300000, 6],
+    ['Duck Ponds, Victoria, Australia', -18.77376944, 131.27766111, 7],
+    ['Tipperary, Ireland', -34.61953056, 148.79386111, 8],
+    ['Roscrea, Tipperary, Ireland', -34.87118889, 137.51328056, 9],
+    ['Ballarat, Victoria, Australia', -37.55903056, 143.85875000, 10],
+    ['Gundagai, NSW, Australia', -33.55880000, 115.67320000, 11],
+    ['Wagga Wagga, NSW, Australia', -35.12576944, 147.35375000, 12],
+    ['Staceys Bridge, Victoria, Australia', -38.55000000, 146.53333056, 13]
+  ];
+  var map;
+
+  function initialize() {
+    var mapOptions = {
+      scaleControl: true,
+      zoomControl:  true, 
+      zoom:         3,
+      mapTypeId:    google.maps.MapTypeId.ROADMAP,
+      center:       new google.maps.LatLng(0, 0)
+    }
+    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+  }
+
+  function drop() {
+    for (var i = 0; i < tracelife.length; i++) {
+      setTimeout(function() {
+        addMarker();
+      }, i * 1000);
+    }
+  }
+
+  function addMarker() {
+    var location = tracelife[iterator];
+    var myLatLng = new google.maps.LatLng(location[1], location[2]);
+
+    markers.push(new google.maps.Marker({
+      position:  myLatLng,
+      map:       map,
+      draggable: true,
+      title:     location[0],
+      animation: google.maps.Animation.DROP
+    }));
+    iterator++;
+  }
+</script>
+</head>
+<body id ="FamilyMap" onload ="initialize()">
+	<div id="header">
+		<h1 id="SiteTitle">David Lowe - Family Tree</h1>
+	</div>
+	<div class="wrapper" role="navigation" id="nav">
+		<div class="container">
+			<ul class="menu" id="dropmenu">
+				<li><a href="../../../index.html" title="Home">Home</a></li>
+				<li><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
+				<li><a href="../../../surnames.html" title="Surnames">Surnames</a></li>
+				<li><a href="../../../families.html" title="Families">Families</a></li>
+				<li><a href="../../../events.html" title="Events">Events</a></li>
+				<li><a href="../../../places.html" title="Places">Places</a></li>
+				<li><a href="../../../sources.html" title="Sources">Sources</a></li>
+				<li><a href="../../../media.html" title="Media">Media</a></li>
+				<li><a href="../../../thumbnails.html" title="Thumbnails">Thumbnails</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content" id="FamilyMapDetail">
+		<h3>Tracking Whelan, Margaret</h3>
+		<p id="description">
+		This map page represents that person and any descendants with all of their event/ places. If you place your mouse over the marker it will display the place name. The markers and the Reference list are sorted in date order (if any?). Clicking on a place&#8217;s name in the Reference section will take you to that place&#8217;s page.
+		</p>
+		<div id="map_canvas">
+		</div>
+		<button onclick="drop()" id="drop">Drop Markers</button>
+		<div class="subsection" id="references">
+			<h4>References</h4>
+			<table class="infolist">
+				<thead>
+					<tr>
+						<th class="ColumnDate">Date</th>
+						<th class="ColumnPlace">Place Title</th>
+						<th class="ColumnType">Event Type</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="ColumnDate">abt 1855-00-00</td>
+						<td class="ColumnPlace"><a href="../../../plc/5/f/d44bc699362477d6a3e57e2c4f5.html" title="Bullarook, Victoria, Australia">Bullarook, Victoria, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1842-04-17</td>
+						<td class="ColumnPlace"><a href="../../../plc/8/f/d44bb90dd9a59292feae915c7f8.html" title="Heidelberg, Victoria, Australia">Heidelberg, Victoria, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1845-00-00</td>
+						<td class="ColumnPlace"><a href="../../../plc/5/6/d44bbe177d11c99e2938e918265.html" title="Barrabool, Victoria, Australia">Barrabool, Victoria, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1846-09-12</td>
+						<td class="ColumnPlace"><a href="../../../plc/0/9/d44bbf44f653307d11d93b3df90.html" title="Mt Eliza, Victoria, Australia">Mt Eliza, Victoria, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1848-06-15</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/5/d43c2e22c6e480b7fee67de6557.html" title="Melbourne, Victoria, Australia">Melbourne, Victoria, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1851-03-29</td>
+						<td class="ColumnPlace"><a href="../../../plc/5/0/d44bc5396e3813c78ad69b5f05.html" title="Fiery Creek, Victoria, Australia">Fiery Creek, Victoria, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1857-11-30</td>
+						<td class="ColumnPlace"><a href="../../../plc/6/f/d44bc77ca50288666c92dc592f6.html" title="Duck Ponds, Victoria, Australia">Duck Ponds, Victoria, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">abt 1813-00-00</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/6/d44bb7565b7668ae5fd1aec1d61.html" title="Tipperary, Ireland">Tipperary, Ireland</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">abt 1817-00-00</td>
+						<td class="ColumnPlace"><a href="../../../plc/6/8/d44bcb29be075cf28da6bf06d86.html" title="Roscrea, Tipperary, Ireland">Roscrea, Tipperary, Ireland</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1893-10-11</td>
+						<td class="ColumnPlace"><a href="../../../plc/3/7/d44bb9cf64e242096ca3e29a473.html" title="Ballarat, Victoria, Australia">Ballarat, Victoria, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1896-06-13</td>
+						<td class="ColumnPlace"><a href="../../../plc/d/a/d44bb7c343c2fc54741b5d4edad.html" title="Gundagai, NSW, Australia">Gundagai, NSW, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1926-00-00</td>
+						<td class="ColumnPlace"><a href="../../../plc/6/d/d43ae86cbaa9917d00699f76d6.html" title="Wagga Wagga, NSW, Australia">Wagga Wagga, NSW, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1934-07-11</td>
+						<td class="ColumnPlace"><a href="../../../plc/b/e/d44bc59c6101350f04d4e5807eb.html" title="Staceys Bridge, Victoria, Australia">Staceys Bridge, Victoria, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="fullclear"></div>
+	<div id="footer">
+		<p id="createdate">
+		Generated by <a href="http://gramps-project.org/">Gramps</a> GrampsAIO64-4.2.1-2 on 2016-09-04<br />Created for <a href="../../../ppl/c/d/d43ae6f1f3a56e85d6ff5502cdc.html">Lowe, David Brian</a>
+		</p>
+		<p id="copyright">
+		&copy; 2016 David Lowe
+		</p>
+	</div>
+</body>
+</html>

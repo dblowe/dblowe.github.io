@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+	<title>David Lowe - Family Tree - Family Map</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps GrampsAIO64-4.2.1-2 http://gramps-project.org/" />
+	<meta name="author" content="David Lowe" />
+	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link media="screen" href="../../../css/narrative-screen.css" rel="stylesheet" type="text/css" />
+	<link media="print" href="../../../css/narrative-print.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" media="screen" rel="stylesheet" href="../../../css/narrative-maps.css" />
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script style="width =100%; height =100%;" deter="deter" type="text/javascript">
+
+  var markers = [];
+  var iterator = 0;
+
+  var tracelife = [
+    ['Sussex, England', 50.94520000, -0.04486944, 1],
+    ['Uckfield, Sussex, England', 50.96948056, 0.09588889, 2],
+    ['Mayfield, Sussex, England', 51.02013056, 0.25843889, 3],
+    ['Prahran, Victoria, Australia', -37.84931111, 144.98931111, 4],
+    ['NSW, Australia', -32.96163889, 150.25801111, 5],
+    ['Cobbity, NSW, Australia', -34.01604300, 150.68274500, 6],
+    ['Goulburn, NSW, Australia', -34.75155000, 149.72086111, 7],
+    ['Hobart, Tasmania, Australia', -42.87936111, 147.32941111, 8],
+    ['Axedale, Victoria, Australia', -36.80000000, 144.51666944, 9],
+    ['Wangaratta, Victoria, Australia', -36.35486111, 146.31653056, 10],
+    ['Benalla, Victoria, Australia', -36.54431111, 145.98458056, 11],
+    ['Parramatta, NSW, Australia', -33.81513056, 151.00860000, 12],
+    ['Kogarah, Sydney, NSW, Australia', -35.98731944, 145.92341111, 13],
+    ['Sydney, NSW, Australia', -33.86785000, 151.20731944, 14]
+  ];
+  var map;
+
+  function initialize() {
+    var mapOptions = {
+      scaleControl: true,
+      zoomControl:  true, 
+      zoom:         3,
+      mapTypeId:    google.maps.MapTypeId.ROADMAP,
+      center:       new google.maps.LatLng(0, 0)
+    }
+    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+  }
+
+  function drop() {
+    for (var i = 0; i < tracelife.length; i++) {
+      setTimeout(function() {
+        addMarker();
+      }, i * 1000);
+    }
+  }
+
+  function addMarker() {
+    var location = tracelife[iterator];
+    var myLatLng = new google.maps.LatLng(location[1], location[2]);
+
+    markers.push(new google.maps.Marker({
+      position:  myLatLng,
+      map:       map,
+      draggable: true,
+      title:     location[0],
+      animation: google.maps.Animation.DROP
+    }));
+    iterator++;
+  }
+</script>
+</head>
+<body id ="FamilyMap" onload ="initialize()">
+	<div id="header">
+		<h1 id="SiteTitle">David Lowe - Family Tree</h1>
+	</div>
+	<div class="wrapper" role="navigation" id="nav">
+		<div class="container">
+			<ul class="menu" id="dropmenu">
+				<li><a href="../../../index.html" title="Home">Home</a></li>
+				<li><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
+				<li><a href="../../../surnames.html" title="Surnames">Surnames</a></li>
+				<li><a href="../../../families.html" title="Families">Families</a></li>
+				<li><a href="../../../events.html" title="Events">Events</a></li>
+				<li><a href="../../../places.html" title="Places">Places</a></li>
+				<li><a href="../../../sources.html" title="Sources">Sources</a></li>
+				<li><a href="../../../media.html" title="Media">Media</a></li>
+				<li><a href="../../../thumbnails.html" title="Thumbnails">Thumbnails</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content" id="FamilyMapDetail">
+		<h3>Tracking Harris, Jonathan</h3>
+		<p id="description">
+		This map page represents that person and any descendants with all of their event/ places. If you place your mouse over the marker it will display the place name. The markers and the Reference list are sorted in date order (if any?). Clicking on a place&#8217;s name in the Reference section will take you to that place&#8217;s page.
+		</p>
+		<div id="map_canvas">
+		</div>
+		<button onclick="drop()" id="drop">Drop Markers</button>
+		<div class="subsection" id="references">
+			<h4>References</h4>
+			<table class="infolist">
+				<thead>
+					<tr>
+						<th class="ColumnDate">Date</th>
+						<th class="ColumnPlace">Place Title</th>
+						<th class="ColumnType">Event Type</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="ColumnDate">abt 1802-00-00</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/2/d4ef0c95dd91db1c996653ebc21.html" title="Sussex, England">Sussex, England</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1800-00-00</td>
+						<td class="ColumnPlace"><a href="../../../plc/f/2/d4ef0c9a6cd1b4fd3c3091ae62f.html" title="Uckfield, Sussex, England">Uckfield, Sussex, England</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1821-11-17</td>
+						<td class="ColumnPlace"><a href="../../../plc/8/1/d4ef2b1e619334a9da07d792418.html" title="Mayfield, Sussex, England">Mayfield, Sussex, England</a></td>
+						<td class="ColumnType">Marriage</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1824-07-31</td>
+						<td class="ColumnPlace"><a href="../../../plc/2/0/d44c006d73b719041e93764b902.html" title="Prahran, Victoria, Australia">Prahran, Victoria, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1832-01-15</td>
+						<td class="ColumnPlace"><a href="../../../plc/7/a/d43b0760ab41f67fa73beb64fa7.html" title="NSW, Australia">NSW, Australia</a></td>
+						<td class="ColumnType">Birth</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1836-03-30</td>
+						<td class="ColumnPlace"><a href="../../../plc/4/d/d4ef0f4713444ea4fde9c90efd4.html" title="Cobbity, NSW, Australia">Cobbity, NSW, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1840-10-12</td>
+						<td class="ColumnPlace"><a href="../../../plc/4/2/d4518b71ee926c355ed593b4724.html" title="Goulburn, NSW, Australia">Goulburn, NSW, Australia</a></td>
+						<td class="ColumnType">Marriage</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1853-06-20</td>
+						<td class="ColumnPlace"><a href="../../../plc/0/6/d4ef2c0b6bc2e0531b0e76b4e60.html" title="Hobart, Tasmania, Australia">Hobart, Tasmania, Australia</a></td>
+						<td class="ColumnType">Marriage</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1881-07-20</td>
+						<td class="ColumnPlace"><a href="../../../plc/1/d/d4ef2e947db53c41553786debd1.html" title="Axedale, Victoria, Australia">Axedale, Victoria, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1888-09-29</td>
+						<td class="ColumnPlace"><a href="../../../plc/4/2/d43c5156be61537fcbf7f246324.html" title="Wangaratta, Victoria, Australia">Wangaratta, Victoria, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1891-10-04</td>
+						<td class="ColumnPlace"><a href="../../../plc/0/2/d44aba9ed1c601641953a135e20.html" title="Benalla, Victoria, Australia">Benalla, Victoria, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1904-03-09</td>
+						<td class="ColumnPlace"><a href="../../../plc/6/f/d4ef2f869aa1c67b0ebdb11c2f6.html" title="Parramatta, NSW, Australia">Parramatta, NSW, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1928-06-26</td>
+						<td class="ColumnPlace"><a href="../../../plc/2/c/d44b964b7d06f9ead7f2420dc2.html" title="Kogarah, Sydney, NSW, Australia">Kogarah, Sydney, NSW, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+					<tr>
+						<td class="ColumnDate">1928-07-25</td>
+						<td class="ColumnPlace"><a href="../../../plc/2/b/d43aedd170959d51edd70d63b2.html" title="Sydney, NSW, Australia">Sydney, NSW, Australia</a></td>
+						<td class="ColumnType">Death</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="fullclear"></div>
+	<div id="footer">
+		<p id="createdate">
+		Generated by <a href="http://gramps-project.org/">Gramps</a> GrampsAIO64-4.2.1-2 on 2016-09-04<br />Created for <a href="../../../ppl/c/d/d43ae6f1f3a56e85d6ff5502cdc.html">Lowe, David Brian</a>
+		</p>
+		<p id="copyright">
+		&copy; 2016 David Lowe
+		</p>
+	</div>
+</body>
+</html>
